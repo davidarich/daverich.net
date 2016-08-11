@@ -35,24 +35,27 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    /*background: #fff;*/
+
+    background: url(../images/pgh_bg.jpg) no-repeat center center;
+    background-size: 100%;
 }
 
-.about-section {
+.experience-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #eee;
 }
 
-.services-section {
+.certifications-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
 }
 
-.contact-section {
+.projects-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
