@@ -2,8 +2,17 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+
+        // This applies color changes to nav bar when the page scrolls
+        // TODO: Cleanup to a single class
+        $(".navbar-brand").css("color","#777");
+        $(".navbar-text").css("color","#777");
+        $(".navbar-default .navbar-nav > li > a").css("color","#777");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".navbar-brand").css("color","#ddd");
+        $(".navbar-text").css("color","#ddd");
+        $(".navbar-default .navbar-nav > li > a").css("color","#ddd");
     }
 });
 

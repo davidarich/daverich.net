@@ -4493,12 +4493,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
   border-color: #237fbc;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #ddd;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4506,10 +4507,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: #ddd;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #ddd;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4519,8 +4520,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #237fbc;
+  color: #1a5c87;
+  /*background-color: #237fbc;*/
+  -webkit-box-shadow: 0 3px 0 #1a5c87 inset;
+  box-shadow: inset  0 -3px 0 0 #1a5c87;
+
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,

@@ -24,6 +24,7 @@ html {
 
     .top-nav-collapse {
         padding: 0;
+        background-color: #f8f8f8;
     }
 }
 
@@ -63,7 +64,7 @@ of those sections to manage the look and feel of the site. */
     overflow: auto;
     padding-top: 150px;
     text-align: center;
-    background: #ccc;
+    background: #ddd;
 }
 
 .projects-section {
@@ -77,7 +78,7 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #ccc;
+    background: #ddd;
 }
 
 /* Images */
@@ -89,6 +90,28 @@ of those sections to manage the look and feel of the site. */
     margin: 40px;
     border-radius: 50%;
 }
+
+.contact-image {
+    max-width: 20% !important;
+    height: auto;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50%;
+}
+
+.exp-image {
+    max-width: 20% !important;
+    height: auto;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50%;
+}
+
+/* Navbar */
+.navbar-is-collapsed {
+    color: #fff;
+}
+
 
 /* Text */
 #intro-name {
