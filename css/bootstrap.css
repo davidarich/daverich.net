@@ -4493,7 +4493,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgba(255,255,255,0.1);
+  background-color: transparent;
   color: #fff;
   border-color: #237fbc;
   font-family: 'Montserrat', sans-serif;
