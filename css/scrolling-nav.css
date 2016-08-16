@@ -60,9 +60,10 @@ of those sections to manage the look and feel of the site. */
 }
 
 .certifications-section {
-    height: 100%;
+    min-height: 80%;
     overflow: auto;
     padding-top: 150px;
+    padding-bottom: 10em;
     text-align: center;
     background: #ddd;
 }
@@ -78,14 +79,21 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #ddd;
+    background: #191e2b;
+    color: #fff;
 }
+
+/*
+.cert-block {
+    padding-bottom: 10em;
+}*/
 
 /* Images */
 
 .cert-image {
     max-width: 50% !important;
     height: auto;
+    max-height: 20em;
     display: inline-block;
     margin: 40px;
     border-radius: 50%;
@@ -114,10 +122,7 @@ of those sections to manage the look and feel of the site. */
 
 
 /* Text */
-#intro-name {
-    font-size: 120px;
-    font-family: 'Montserrat', sans-serif;
-}
+
 #intro-p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -148,3 +153,24 @@ h1 {
     box-shadow: none;
 }
 
+/* Media Queries */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 5vw;
+    }
+    #intro-name {
+        font-size: 10vw;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+
+    }
+    #intro-name {
+        font-size: 120px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
