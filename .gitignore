@@ -25,6 +25,9 @@
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
 
+# Everything
+.idea/*
+
 ## File-based project format:
 *.iws
 

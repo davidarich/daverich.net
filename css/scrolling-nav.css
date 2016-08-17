@@ -89,7 +89,7 @@ of those sections to manage the look and feel of the site. */
 
 
 .cert-block {
-    
+
 }
 
 /* Images */
@@ -172,10 +172,10 @@ h1 {
 
 @media (min-width: 768px) {
     h1 {
-
+        font-size: 350%;
     }
     #intro-name {
-        font-size: 120px;
+        font-size: 140px;
         font-family: 'Montserrat', sans-serif;
     }
 }
