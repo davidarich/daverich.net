@@ -87,7 +87,46 @@ of those sections to manage the look and feel of the site. */
 }
 
 
-.cert-block {
+.centered {
+    text-align: center;
+
+}
+.centered > div {
+    float: none;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.exp-block {
+    min-height: 220px;
+    min-width: 293px;
+    margin: 20px;
+
+    border: solid black 1px;
+    background: #191e2b;
+    color: #fff;
+}
+
+.exp-block-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 293px;
+    font-size: medium;
+
+
+    background: #fff;
+    color: #191e2b;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: -16px;
+
+}
+
+.exp-block-content {
+    height: 160px;
+    padding: 2px;
 
 }
 
@@ -137,26 +176,7 @@ h1 {
     margin-bottom: 5%;
 }
 
-/* Buttons */
 
-.btn.btn-dark-blue{
-    background-color: #237fbc;
-    border-color: #237fbc;
-    -webkit-box-shadow: 0 3px 0 #1a5c87;
-    box-shadow: 0 3px 0 #1a5c87;
-    color: #fff;
-}
-
-.btn.btn-dark-blue:hover{
-    background-color:#166ea8;
-}
-
-.btn.btn-dark-blue:active{
-    top: 3px;
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
 
 /* Media Queries */
 
