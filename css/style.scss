@@ -7,7 +7,7 @@
  */
 
 @import 'theme';
-
+@import '_vendormixins';
 
 body {
   width: 100%;
@@ -22,9 +22,8 @@ html {
 @media(min-width:767px) {
   .navbar {
     padding: 20px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    @include transition(background,0.5s,ease-in-out);
+    @include transition(padding,0.5s,ease-in-out);
   }
 
   .top-nav-collapse {
@@ -82,10 +81,17 @@ section {
     img {
       margin: 20px 12px 12px 12px;
     }
-  }
 
-  a :hover {
-    color: $color-secondary;
+    &:hover {
+      @include transition(color,0.5s,ease);
+      color: $color-secondary;
+      text-decoration: none;
+
+      img {
+        @include transition(background-color,0.5s,ease);
+        background-color: $color-secondary;
+      }
+    }
   }
 }
 
@@ -106,7 +112,7 @@ section {
   margin: 20px;
 
   background: $color-primary;
-  color: #fff;
+  color: $color-mono-primary;
 }
 
 .exp-block-title {
@@ -146,7 +152,7 @@ section {
   max-height: 20em;
   display: inline-block;
   margin: 40px;
-  border-radius: 50%;
+  @include border-radius(50%);
   border: solid thick #aaa;
 }
 
@@ -155,7 +161,7 @@ section {
   height: auto;
   display: inline-block;
   margin: 40px;
-  border-radius: 50%;
+  @include border-radius(50%);
   border: solid thick #aaa;
 }
 
