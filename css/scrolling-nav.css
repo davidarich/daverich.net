@@ -2,6 +2,8 @@
  * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ *
+ * Customized by Dave Rich.
  */
 
 body {
@@ -28,10 +30,6 @@ html {
     }
 }
 
-/* The scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
-
 .intro-section {
     height: 100%;
     padding-top: 150px;
@@ -43,9 +41,10 @@ of those sections to manage the look and feel of the site. */
 
     background: #333;
     background-size: cover;
-
     color: #fff;
+
 }
+
 #intro-name {
     height: 50%;
     margin: auto;
@@ -57,7 +56,6 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     padding-bottom: 10em;
     background: #eee;
-    line-height: 200%;
 }
 
 .certifications-section {
@@ -66,6 +64,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     padding-bottom: 10em;
     text-align: center;
+
     background: #ccc;
 }
 
@@ -98,11 +97,11 @@ of those sections to manage the look and feel of the site. */
 }
 
 .exp-block {
-    min-height: 220px;
+    min-height: 280px;
     min-width: 293px;
     margin: 20px;
 
-    border: solid black 1px;
+
     background: #191e2b;
     color: #fff;
 }
@@ -112,22 +111,29 @@ of those sections to manage the look and feel of the site. */
     align-items: center;
     justify-content: center;
     height: 60px;
-    min-width: 293px;
-    font-size: medium;
-
-
-    background: #fff;
-    color: #191e2b;
+    width: 100%;
+    font-size: 22px;
     margin: 0;
-    margin-top: -1px;
-    margin-left: -16px;
+
+    background: #191e2b;
+    color: #fff;
+    font-family: 'Arbutus Slab', serif;
+    border-bottom: solid thin #5bc0de;
 
 }
 
 .exp-block-content {
     height: 160px;
-    padding: 2px;
+    padding-top: 10px;
 
+    background: #191e2b;
+    color: #ccc;
+
+}
+
+.exp-resume {
+    margin-top: 40px;
+    font-size: 16px;
 }
 
 /* Images */
@@ -139,6 +145,7 @@ of those sections to manage the look and feel of the site. */
     display: inline-block;
     margin: 40px;
     border-radius: 50%;
+    border: solid thick #eee;
 }
 
 .contact-image {
@@ -166,7 +173,8 @@ of those sections to manage the look and feel of the site. */
 /* Text */
 
 #intro-p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arbutus Slab', serif;
+    font-size: 20px;
 }
 
 h1 {
