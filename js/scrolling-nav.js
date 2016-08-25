@@ -1,18 +1,27 @@
+var $color_primary = "#191e2b";
+$color_secondary = "#5bc0de";
+$color_mono_primary = "#fff";
+$color_mono_secondary = "#333";
+$color_mono_tertiary = "#ccc";
+
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
+        // Collapsed
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-
-        // This applies color changes to nav bar when the page scrolls
-        // TODO: Cleanup to a single class
-        $(".navbar-brand").css("color","#777");
-        $(".navbar-text").css("color","#777");
-        $(".navbar-default .navbar-nav > li > a").css("color","#777");
+        $(".navbar-brand").css("color",$color_mono_secondary);
+        $(".navbar-text").css("color",$color_mono_secondary);
+        $(".navbar-default .navbar-nav > li > a").css("color",$color_mono_secondary);
+        $(".navbar-default .navbar-nav>.active>a").css("color",$color_mono_primary);
+        $(".navbar-default").css("background-color","rgba(255,255,255,255)");
     } else {
+        // Not Collapsed
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $(".navbar-brand").css("color","#ddd");
-        $(".navbar-text").css("color","#ddd");
-        $(".navbar-default .navbar-nav > li > a").css("color","#ddd");
+        $(".navbar-brand").css("color",$color_mono_tertiary);
+        $(".navbar-text").css("color",$color_mono_tertiary);
+        $(".navbar-default .navbar-nav > li > a").css("color",$color_mono_tertiary);
+        $(".navbar-default").css("background-color","rgba(255,255,255,0)");
     }
 });
 

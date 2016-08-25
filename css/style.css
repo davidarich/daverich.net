@@ -148,7 +148,7 @@ section {
 .navbar-default {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
-  border-color: #fff;
+  border: none;
   font-family: "Montserrat", sans-serif; }
 
 .navbar-default .navbar-brand {
@@ -161,11 +161,11 @@ section {
   color: #ccc; }
 
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #5bc0de;
-  -webkit-box-shadow: 0 3px 0 0 #5bc0de inset;
-  box-shadow: 0 -3px 0 0 #5bc0de inset; }
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  /* Selected Navbar element */
+  color: #fff;
+  background-color: #5bc0de; }
 
 .navbar-default .navbar-form {
   border-color: #5bc0de; }
