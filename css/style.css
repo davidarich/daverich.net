@@ -18,13 +18,16 @@ html {
 @media (min-width: 767px) {
   .navbar {
     padding: 20px 0;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out; }
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+    -webkit-transition: padding 0.5s ease-in-out;
+    -moz-transition: padding 0.5s ease-in-out;
+    transition: padding 0.5s ease-in-out; }
 
   .top-nav-collapse {
     padding: 0;
-    background-color: #f8f8f8; } }
+    background-color: white; } }
 section {
   min-height: 100%;
   padding-top: 150px;
@@ -65,8 +68,17 @@ section {
     color: #fff; }
     .contact-section a img {
       margin: 20px 12px 12px 12px; }
-  .contact-section a :hover {
-    color: #5bc0de; }
+    .contact-section a:hover {
+      -webkit-transition: color 0.5s ease;
+      -moz-transition: color 0.5s ease;
+      transition: color 0.5s ease;
+      color: #5bc0de;
+      text-decoration: none; }
+      .contact-section a:hover img {
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+        background-color: #5bc0de; }
 
 .centered {
   text-align: center; }
@@ -113,6 +125,8 @@ section {
   max-height: 20em;
   display: inline-block;
   margin: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   border: solid thick #aaa; }
 
@@ -121,6 +135,8 @@ section {
   height: auto;
   display: inline-block;
   margin: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   border: solid thick #aaa; }
 
@@ -128,6 +144,39 @@ section {
 .navbar-is-collapsed {
   color: #fff; }
 
+/* Override Bootstrap Styles */
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  border: none;
+  font-family: "Montserrat", sans-serif; }
+
+.navbar-default .navbar-brand {
+  color: #ccc; }
+
+.navbar-default .navbar-text {
+  color: #ccc; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #ccc; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  /* Selected Navbar element */
+  color: #fff;
+  background-color: #5bc0de; }
+
+.navbar-default .navbar-form {
+  border-color: #5bc0de; }
+
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #5bc0de; }
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  background-color: #5bc0de; }
+
+/* End Override */
 /* Text */
 #intro-p {
   font-family: "Arbutus Slab", serif;
