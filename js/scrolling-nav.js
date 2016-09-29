@@ -44,4 +44,13 @@ $( document ).ready(function() {
     $(bgimage).load(function(){
         $("#intro").css("background-image","url("+$(this).attr("src")+")").fadeIn("slow", "swing");
     });
+
+    // Fancy Background Zoom on load
+    // TODO: FIX - Right now this breaks the cover property intended for smaller backgrounds.
+    $("#intro").animate({backgroundSize:"140%"}, 12000, "linear");
+    //$("#intro").css();
+
 });
+
+
+

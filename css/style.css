@@ -43,7 +43,9 @@ section {
   align-items: center;
   justify-content: center;
   background: #191e2b;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: #fff; }
 
 #intro-name {
