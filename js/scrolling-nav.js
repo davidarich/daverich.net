@@ -38,12 +38,10 @@ $(function() {
 
 // Optimizes page load speed by loading the background image last
 $( document ).ready(function() {
-
     var bgimage = new Image();
     bgimage.src="images/pgh_bg_dark_optimized.jpg";
 
     $(bgimage).load(function(){
         $("#intro").css("background-image","url("+$(this).attr("src")+")").fadeIn("slow", "swing");
     });
-
 });

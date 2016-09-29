@@ -89,30 +89,36 @@ section {
   vertical-align: text-top; }
 
 .exp-block {
-  min-height: 280px;
+  text-align: left;
+  min-height: 120px;
   min-width: 293px;
   margin: 20px;
-  background: #191e2b;
+  padding: 0;
   color: #fff; }
 
 .exp-block-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
+  height: 50px;
   width: 100%;
   font-size: 22px;
   margin: 0;
-  background: #191e2b;
+  padding-top: 6px;
+  padding-left: 10px;
+  background-color: #191e2b;
   color: #fff;
-  font-family: "Arbutus Slab", serif;
-  border-bottom: solid thin #5bc0de; }
+  font-family: "Montserrat", sans-serif;
+  border-bottom: solid thick #5bc0de; }
 
 .exp-block-content {
-  height: 160px;
-  padding-top: 10px;
-  background: #191e2b;
-  color: #ccc; }
+  min-height: 80px;
+  padding: 20px;
+  background-color: #fff;
+  color: #333; }
+
+.exp-block-content-left {
+  float: left; }
+
+.exp-block-content-right {
+  float: right; }
 
 .exp-resume {
   margin-top: 40px;
