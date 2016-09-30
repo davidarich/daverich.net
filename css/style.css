@@ -45,7 +45,8 @@ section {
   background: #191e2b;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position-x: center;
+  background-position-y: center;
   color: #fff; }
 
 #intro-name {
@@ -96,6 +97,8 @@ section {
   min-width: 293px;
   margin: 20px;
   padding: 0;
+  overflow: auto;
+  display: block;
   color: #fff; }
 
 .exp-block-title {
@@ -105,6 +108,8 @@ section {
   margin: 0;
   padding-top: 6px;
   padding-left: 10px;
+  overflow: auto;
+  display: block;
   background-color: #191e2b;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -113,14 +118,18 @@ section {
 .exp-block-content {
   min-height: 80px;
   padding: 20px;
+  overflow: auto;
+  display: block;
   background-color: #fff;
   color: #333; }
 
 .exp-block-content-left {
-  float: left; }
+  float: left;
+  display: block; }
 
 .exp-block-content-right {
-  float: right; }
+  float: right;
+  display: block; }
 
 .exp-resume {
   margin-top: 40px;
@@ -199,10 +208,10 @@ h1 {
 /* Media Queries */
 @media (max-width: 767px) {
   h1 {
-    font-size: 6vw; }
+    font-size: 48px; }
 
   #intro-name {
-    font-size: 12vw;
+    font-size: 140px;
     font-family: "Montserrat", sans-serif; } }
 @media (min-width: 768px) {
   h1 {

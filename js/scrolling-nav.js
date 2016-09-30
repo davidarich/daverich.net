@@ -4,7 +4,6 @@ $color_mono_primary = "#fff";
 $color_mono_secondary = "#333";
 $color_mono_tertiary = "#ccc";
 
-
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -42,12 +41,15 @@ $( document ).ready(function() {
     bgimage.src="images/pgh_bg_dark_optimized.jpg";
 
     $(bgimage).load(function(){
-        $("#intro").css("background-image","url("+$(this).attr("src")+")").fadeIn("slow", "swing");
+        $("#intro").css("background-image","url("+$(this).attr("src")+")");
+        $("#intro").fadeIn("slow", "swing");
     });
 
     // Fancy Background Zoom on load
-    // TODO: FIX - Right now this breaks the cover property intended for smaller backgrounds.
-    $("#intro").animate({backgroundSize:"140%"}, 12000, "linear");
+    // TODO: FIX - Right now this breaks the cover property intended for smaller devices.
+    // Custom bezier for easing: http://cubic-bezier.com
+    var $intro = $("#intro");
+        $intro.velocity({"background-size" : "140%"}, 20000, [ 0.45, 0.50, 0.75, 0.75 ]);
     //$("#intro").css();
 
 });

@@ -51,7 +51,8 @@ section {
   background: $color-primary;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position-x: center;
+  background-position-y: center;
   color: $color-mono-primary;
 }
 
@@ -114,6 +115,8 @@ section {
   min-width: 293px;
   margin: 20px;
   padding: 0;
+  overflow: auto;
+  display: block;
 
   color: $color-mono-primary;
 }
@@ -127,7 +130,8 @@ section {
   margin: 0;
   padding-top: 6px;
   padding-left: 10px;
-
+  overflow: auto;
+  display: block;
 
   background-color: $color-primary;
   color: $color-mono-primary;
@@ -139,6 +143,8 @@ section {
 .exp-block-content {
   min-height: 80px;
   padding: 20px;
+  overflow: auto;
+  display: block;
 
   background-color: $color-mono-primary;
   color: $color-mono-secondary;
@@ -146,9 +152,11 @@ section {
 
 .exp-block-content-left {
   float: left;
+  display: block;
 }
 .exp-block-content-right {
   float: right;
+  display: block;
 }
 
 .exp-resume {
@@ -244,10 +252,10 @@ h1 {
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 6vw;
+    font-size: 48px;
   }
   #intro-name {
-    font-size: 12vw;
+    font-size: 140px;
     font-family: $font-primary-sans;
   }
 }
