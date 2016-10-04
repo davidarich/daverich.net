@@ -34,7 +34,7 @@ html {
 
 section {
   min-height: 100%;
-  padding-top: 150px;
+  padding-top: 60px;
   overflow: auto;
   padding-bottom: 10em;
   font-size: 16px;
@@ -164,6 +164,18 @@ section {
   font-size: 16px;
 }
 
+.project-block {
+  display: block;
+}
+
+.project-block-spacer-side {
+  width: 8.333333333%;
+}
+
+.project-block-spacer-mid {
+  width: 8.333333333%;
+}
+
 /* Images */
 
 .cert-image {
@@ -173,7 +185,7 @@ section {
   display: inline-block;
   margin: 40px;
   @include border-radius(50%);
-  border: solid thick #aaa;
+  border: solid thick $color-secondary;
 }
 
 .contact-image {
@@ -182,7 +194,7 @@ section {
   display: inline-block;
   margin: 40px;
   @include border-radius(50%);
-  border: solid thick #aaa;
+  border: solid thick $color-secondary;
 }
 
 /* Navbar */
@@ -262,7 +274,7 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 48px;
+    font-size: 64px;
   }
   #intro-name {
     font-size: 140px;

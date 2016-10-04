@@ -49,7 +49,7 @@ $( document ).ready(function() {
     // TODO: FIX - Right now this breaks the cover property intended for smaller devices.
     // Custom bezier for easing: http://cubic-bezier.com
     var $intro = $("#intro");
-        $intro.velocity({"background-size" : "140%"}, 20000, [ 0.45, 0.50, 0.75, 0.75 ]);
+        $intro.velocity({"background-size" : "150%"}, 20000, [ 0.45, 0.50, 0.75, 0.75 ]);
     //$("#intro").css();
 
 });
