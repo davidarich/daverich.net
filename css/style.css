@@ -132,7 +132,7 @@ section {
   display: block; }
 
 .exp-block-extended {
-  visibility: hidden; }
+  display: none; }
 
 .exp-resume {
   margin-top: 40px;

@@ -41,15 +41,16 @@ $( document ).ready(function() {
     bgimage.src="images/pgh_bg_dark_optimized.jpg";
 
     $(bgimage).load(function(){
-        $("#intro").css("background-image","url("+$(this).attr("src")+")");
         $("#intro").fadeIn("slow", "swing");
+        $("#intro").css("background-image","url("+$(this).attr("src")+")");
+
     });
 
     // Fancy Background Zoom on load
     // TODO: FIX - Right now this breaks the cover property intended for smaller devices.
     // Custom bezier for easing: http://cubic-bezier.com
     var $intro = $("#intro");
-        $intro.velocity({"background-size" : "150%"}, 20000, [ 0.45, 0.50, 0.75, 0.75 ]);
+        $intro.velocity({"background-size" : "150%"}, 50000, [ 0.17, 0.67, 0.83, 0.67 ]);
     //$("#intro").css();
 
 });

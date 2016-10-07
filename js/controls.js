@@ -2,12 +2,40 @@
 
 
 // Experience Blocks
-$("#exp_expedient_btn").click(function() {
-    var visibility = $("#exp_expedient").css("visibility");
+// TODO: make a single, reusable event handler
+$("#exp_expedient_btn").click(function(){
 
-    if (visibility == "hidden") {
-        $("#exp_expedient").css("visibility","visible");
+    if ($("#exp_expedient").css("display") == "none") {
+        $("#exp_expedient_btn").html('<span class="glyphicon glyphicon-menu-up"></span>&nbsp;&nbsp;Less');
     } else {
-        $("#exp_expedient").css("visibility","hidden");
+        $("#exp_expedient_btn").html('<span class="glyphicon glyphicon-menu-down"></span>&nbsp;&nbsp;More');
     }
+
+    // Expand the control
+    $("#exp_expedient").slideToggle("slow");
+
+});
+
+$("#exp_staples_btn").click(function() {
+
+    if ($("#exp_staples").css("display") == "none") {
+        $("#exp_staples_btn").html('<span class="glyphicon glyphicon-menu-up"></span>&nbsp;&nbsp;Less');
+    } else {
+        $("#exp_staples_btn").html('<span class="glyphicon glyphicon-menu-down"></span>&nbsp;&nbsp;More');
+    }
+
+    // Expand the control
+    $("#exp_staples").slideToggle("slow");
+});
+
+$("#exp_adi_btn").click(function() {
+
+    if ($("#exp_adi").css("display") == "none") {
+        $("#exp_adi_btn").html('<span class="glyphicon glyphicon-menu-up"></span>&nbsp;&nbsp;Less');
+    } else {
+        $("#exp_adi_btn").html('<span class="glyphicon glyphicon-menu-down"></span>&nbsp;&nbsp;More');
+    }
+
+    // Expand the control
+    $("#exp_adi").slideToggle("slow");
 });
