@@ -12,7 +12,7 @@ $("#exp_expedient_btn").click(function(){
     }
 
     // Expand the control
-    $("#exp_expedient").slideToggle("slow");
+    $("#exp_expedient").slideToggle("fast");
 
 });
 
@@ -25,7 +25,7 @@ $("#exp_staples_btn").click(function() {
     }
 
     // Expand the control
-    $("#exp_staples").slideToggle("slow");
+    $("#exp_staples").slideToggle("fast");
 });
 
 $("#exp_adi_btn").click(function() {
@@ -37,5 +37,5 @@ $("#exp_adi_btn").click(function() {
     }
 
     // Expand the control
-    $("#exp_adi").slideToggle("slow");
+    $("#exp_adi").slideToggle("fast");
 });
