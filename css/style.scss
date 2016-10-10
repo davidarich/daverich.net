@@ -62,7 +62,7 @@ section {
 }
 
 .experience-section {
-  background: $color-mono-tertiary;
+  background: $color-mono-primary;
 }
 
 .projects-section {
@@ -71,6 +71,7 @@ section {
 }
 
 .certifications-section {
+  min-height: 40%;
   background: $color-mono-tertiary;
 }
 
@@ -146,7 +147,7 @@ section {
   overflow: auto;
   display: block;
 
-  background-color: $color-mono-primary;
+  background-color: $color-mono-tertiary;
   color: $color-mono-secondary;
 }
 
@@ -183,7 +184,7 @@ section {
 /* Images */
 
 .cert-image {
-  max-width: 50% !important;
+  max-width: 30% !important;
   height: auto;
   max-height: 20em;
   display: inline-block;

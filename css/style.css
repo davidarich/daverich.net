@@ -54,13 +54,14 @@ section {
   margin: auto; }
 
 .experience-section {
-  background: #ccc; }
+  background: #fff; }
 
 .projects-section {
   background: #333;
   color: #fff; }
 
 .certifications-section {
+  min-height: 40%;
   background: #ccc; }
 
 .contact-section {
@@ -120,7 +121,7 @@ section {
   padding: 20px;
   overflow: auto;
   display: block;
-  background-color: #fff;
+  background-color: #ccc;
   color: #333; }
 
 .exp-block-content-left {
@@ -149,7 +150,7 @@ section {
 
 /* Images */
 .cert-image {
-  max-width: 50% !important;
+  max-width: 30% !important;
   height: auto;
   max-height: 20em;
   display: inline-block;
