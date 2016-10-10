@@ -28,9 +28,9 @@ html {
   .top-nav-collapse {
     padding: 0;
     background-color: white; } }
-.navbar-ex1-collapse {
-  float: right; }
-
+@media (min-width: 767px) {
+  .navbar-ex1-collapse {
+    float: right; } }
 section {
   min-height: 100%;
   padding-top: 60px;

@@ -32,8 +32,11 @@ html {
   }
 }
 
-.navbar-ex1-collapse {
-  float: right;
+// Makes navbar right aligned unless collapsed to hamburger menu
+@media(min-width: 767px){
+  .navbar-ex1-collapse {
+    float: right;
+  }
 }
 
 section {
