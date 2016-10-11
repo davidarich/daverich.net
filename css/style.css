@@ -145,6 +145,12 @@ section {
   margin-top: 40px;
   font-size: 16px; }
 
+.aboutme-block {
+  display: block;
+  text-algin: center;
+  margin: 0;
+  background: #5bc0de; }
+
 .project-block {
   display: block;
   text-align: center; }

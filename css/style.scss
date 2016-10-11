@@ -181,11 +181,18 @@ section {
   font-size: 16px;
 }
 
+.aboutme-block {
+  display: block;
+  text-algin: center;
+  margin: 0;
+  background: $color-secondary;
+}
+
 .project-block {
   display: block;
   text-align: center;
-
 }
+
 .project-block-pic {
   background: $color-mono-primary;
   border-bottom: solid thick $color-secondary;
