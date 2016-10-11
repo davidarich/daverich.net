@@ -154,6 +154,9 @@ section {
   border-bottom: solid thick #5bc0de;
   height: 200px; }
 
+.project-block-pic:hover {
+  background: #5bc0de; }
+
 .project-bg {
   margin: 0;
   height: 200px; }

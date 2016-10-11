@@ -191,11 +191,15 @@ section {
   border-bottom: solid thick $color-secondary;
   height: 200px;
 }
+.project-block-pic:hover {
+  background: $color-secondary;
+}
 
 .project-bg {
   margin: 0;
   height: 200px;
 }
+
 
 .project-bg-datatransfer {
   background: url(../images/swifticons/Datatransfer.svg) no-repeat center center;
