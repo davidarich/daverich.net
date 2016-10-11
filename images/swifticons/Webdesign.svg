@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Webdesign</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M38,4 L48,4 L48,26 L38,26 L38,4 Z M21,4 L31,4 L31,26 L21,26 L21,4 Z M0,1.992 C0,0.892 0.903,0 2.007,0 L49.993,0 C51.102,0 52,0.898 52,1.992 L52,30 L0,30 L0,1.992 L0,1.992 Z" id="path-1"></path>
+        <path id="path-3" d="M0,0 L54,0 L54,10 L0,10 L0,0 Z"></path>
+        <path id="path-5" d="M2,4 C3.105,4 4,3.105 4,2 C4,0.895 3.105,0 2,0 C0.895,0 0,0.895 0,2 C0,3.105 0.895,4 2,4"></path>
+    </defs>
+    <g id="colored" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Tech_sliced" sketch:type="MSLayerGroup" transform="translate(-120.000000, -1320.000000)"></g>
+        <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(-119.000000, -1318.000000)">
+            <g id="Group-1253" transform="translate(123.000000, 1327.000000)">
+                <mask id="mask-2" sketch:name="Clip 1252" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-1252"></g>
+                <path d="M0,0 L52,0 L52,30 L0,30 L0,0 Z" id="Fill-1251" fill="#D8D8D8" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M176,1358 L122,1358 L122,1328.991 C122,1327.342 123.349,1326 125.007,1326 L172.993,1326 C174.651,1326 176,1327.342 176,1328.991 L176,1358 L176,1358 Z M124,1356 L174,1356 L174,1328.991 C174,1328.444 173.548,1328 172.993,1328 L125.007,1328 C124.452,1328 124,1328.444 124,1328.991 L124,1356 L124,1356 Z M160,1330 L172,1330 L172,1354 L160,1354 L160,1330 Z M162,1352 L170,1352 L170,1332 L162,1332 L162,1352 Z M143,1330 L155,1330 L155,1354 L143,1354 L143,1330 Z M145,1352 L153,1352 L153,1332 L145,1332 L145,1352 Z" id="Fill-1254" fill="#535353" sketch:type="MSShapeGroup"></path>
+            <g id="Group-1257" transform="translate(122.000000, 1356.000000)">
+                <mask id="mask-4" sketch:name="Clip 1256" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-1256"></g>
+                <path d="M-2,-2 L56,-2 L56,12 L-2,12 L-2,-2 Z M2,8 L52,8 L52,2 L2,2 L2,8 Z" id="Fill-1255" fill="#535353" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+            </g>
+            <g id="Group-1260" transform="translate(147.000000, 1359.000000)">
+                <mask id="mask-6" sketch:name="Clip 1259" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-1259"></g>
+                <path d="M2,6 C-0.206,6 -2,4.206 -2,2 C-2,-0.206 -0.206,-2 2,-2 C4.206,-2 6,-0.206 6,2 C6,4.206 4.206,6 2,6" id="Fill-1258" fill="#535353" sketch:type="MSShapeGroup" mask="url(#mask-6)"></path>
+            </g>
+            <path d="M157.02,1373 C157.013,1373 157.007,1372.999 157,1373 L141,1373 C140.664,1373 140.35,1372.831 140.165,1372.551 C139.98,1372.27 139.948,1371.915 140.081,1371.606 L143.081,1364.606 C143.238,1364.238 143.6,1364 144,1364 L154,1364 C154.4,1364 154.762,1364.238 154.919,1364.606 L157.847,1371.438 C157.956,1371.598 158.02,1371.791 158.02,1372 C158.02,1372.553 157.572,1373 157.02,1373 L157.02,1373 Z M142.517,1371 L155.483,1371 L153.341,1366 L144.659,1366 L142.517,1371 L142.517,1371 Z" id="Fill-1261" fill="#535353" sketch:type="MSShapeGroup"></path>
+            <path d="M126,1343 L138,1343 L138,1354 L126,1354 L126,1343 Z M128,1352 L136,1352 L136,1345 L128,1345 L128,1352 Z" id="Fill-1262" fill="#535353" sketch:type="MSShapeGroup"></path>
+            <path d="M126,1330 L138,1330 L138,1341 L126,1341 L126,1330 Z M128,1339 L136,1339 L136,1332 L128,1332 L128,1339 Z" id="Fill-1263" fill="#535353" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

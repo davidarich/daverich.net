@@ -40,8 +40,8 @@ html {
 }
 
 section {
-  min-height: 100%;
-  padding-top: 60px;
+  //min-height: 100%;
+  padding-top: 70px;
   overflow: auto;
   padding-bottom: 10em;
   font-size: 16px;
@@ -68,12 +68,17 @@ section {
   margin: auto;
 }
 
+.aboutme-section {
+  background: $color-mono-primary;
+  color: $color-mono-secondary;
+}
+
 .experience-section {
   background: $color-mono-primary;
 }
 
 .projects-section {
-  background: $color-mono-secondary;
+  background: $color-primary;
   color: $color-mono-primary;
 }
 
@@ -178,14 +183,54 @@ section {
 
 .project-block {
   display: block;
+  text-align: center;
+
+}
+.project-block-pic {
+  background: $color-mono-primary;
+  border-bottom: solid thick $color-secondary;
+  height: 200px;
 }
 
-.project-block-spacer-side {
-  width: 8.333333333%;
+.project-bg {
+  margin: 0;
+  height: 200px;
 }
 
-.project-block-spacer-mid {
-  width: 8.333333333%;
+.project-bg-datatransfer {
+  background: url(../images/swifticons/Datatransfer.svg) no-repeat center center;
+  background-size: 40%;
+}
+
+.project-bg-datawork {
+  background: url(../images/swifticons/Datawork.svg) no-repeat center center;
+  background-size: 40%;
+}
+
+.project-bg-manbag {
+  background: url(../images/swifticons/Manbag.svg) no-repeat center center;
+  background-size: 40%;
+}
+
+.project-bg-paths {
+  background: url(../images/swifticons/Paths.svg) no-repeat center center;
+  background-size: 40%;
+}
+
+.project-bg-webdesign {
+  background: url(../images/swifticons/Webdesign.svg) no-repeat center center;
+  background-size: 40%;
+}
+
+.project-block-bottom {
+  margin-bottom: 30px;
+  padding: 10px 4px 10px 4px;
+  background: $color-mono-tertiary;
+  color: $color-mono-secondary;
+}
+
+.center-block {
+  margin: 0 auto;
 }
 
 /* Images */
@@ -201,7 +246,7 @@ section {
 }
 
 .contact-image {
-  max-width: 25% !important;
+  max-width: 15% !important;
   height: auto;
   display: inline-block;
   margin: 40px;
@@ -286,7 +331,7 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 64px;
+    font-size: 48px;
   }
   #intro-name {
     font-size: 140px;

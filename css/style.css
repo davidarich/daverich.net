@@ -32,8 +32,7 @@ html {
   .navbar-ex1-collapse {
     float: right; } }
 section {
-  min-height: 100%;
-  padding-top: 60px;
+  padding-top: 70px;
   overflow: auto;
   padding-bottom: 10em;
   font-size: 16px; }
@@ -56,11 +55,15 @@ section {
   height: 50%;
   margin: auto; }
 
+.aboutme-section {
+  background: #fff;
+  color: #333; }
+
 .experience-section {
   background: #fff; }
 
 .projects-section {
-  background: #333;
+  background: #191e2b;
   color: #fff; }
 
 .certifications-section {
@@ -143,13 +146,46 @@ section {
   font-size: 16px; }
 
 .project-block {
-  display: block; }
+  display: block;
+  text-align: center; }
 
-.project-block-spacer-side {
-  width: 8.333333333%; }
+.project-block-pic {
+  background: #fff;
+  border-bottom: solid thick #5bc0de;
+  height: 200px; }
 
-.project-block-spacer-mid {
-  width: 8.333333333%; }
+.project-bg {
+  margin: 0;
+  height: 200px; }
+
+.project-bg-datatransfer {
+  background: url(../images/swifticons/Datatransfer.svg) no-repeat center center;
+  background-size: 40%; }
+
+.project-bg-datawork {
+  background: url(../images/swifticons/Datawork.svg) no-repeat center center;
+  background-size: 40%; }
+
+.project-bg-manbag {
+  background: url(../images/swifticons/Manbag.svg) no-repeat center center;
+  background-size: 40%; }
+
+.project-bg-paths {
+  background: url(../images/swifticons/Paths.svg) no-repeat center center;
+  background-size: 40%; }
+
+.project-bg-webdesign {
+  background: url(../images/swifticons/Webdesign.svg) no-repeat center center;
+  background-size: 40%; }
+
+.project-block-bottom {
+  margin-bottom: 30px;
+  padding: 10px 4px 10px 4px;
+  background: #ccc;
+  color: #333; }
+
+.center-block {
+  margin: 0 auto; }
 
 /* Images */
 .cert-image {
@@ -164,7 +200,7 @@ section {
   border: solid thick #5bc0de; }
 
 .contact-image {
-  max-width: 25% !important;
+  max-width: 15% !important;
   height: auto;
   display: inline-block;
   margin: 40px;
@@ -231,7 +267,7 @@ h1 {
     font-family: "Montserrat", sans-serif; } }
 @media (min-width: 768px) {
   h1 {
-    font-size: 64px; }
+    font-size: 48px; }
 
   #intro-name {
     font-size: 140px;
