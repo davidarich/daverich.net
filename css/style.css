@@ -73,7 +73,8 @@ section {
 .contact-section {
   text-align: center;
   background: #191e2b;
-  color: #fff; }
+  color: #fff;
+  min-height: 100%; }
   .contact-section a {
     color: #fff; }
     .contact-section a img {
