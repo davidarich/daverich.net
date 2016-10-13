@@ -47,12 +47,20 @@ $( document ).ready(function() {
     });
 
     // Fancy Background Zoom on load
-    // TODO: FIX - Right now this breaks the cover property intended for smaller devices.
     // Custom bezier for easing: http://cubic-bezier.com
     var $intro = $("#intro");
-        $intro.velocity({"background-size" : "140%"}, 19000, [ 0.0, 0.0, 1.0, 1.0 ]);
-    //$("#intro").css();
 
+    if ($(window).width() > 800) {
+        $intro.css("background-size","100%");
+        $intro.velocity({"background-size" : "140%"}, 19000, [ 0.0, 0.0, 1.0, 1.0 ]);
+    }
+
+});
+
+$(window).resize(function() {
+    if ($(window).width() <= 800){
+        $("#intro").css("background-size", "cover");
+    }
 });
 
 

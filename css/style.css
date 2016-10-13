@@ -45,7 +45,7 @@ section {
   align-items: center;
   justify-content: center;
   background: #191e2b;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
