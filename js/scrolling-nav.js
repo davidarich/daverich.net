@@ -12,7 +12,7 @@ $(window).scroll(function() {
         $(".navbar-brand").css("color",$color_mono_secondary);
         $(".navbar-text").css("color",$color_mono_secondary);
         $(".navbar-default .navbar-nav > li > a").css("color",$color_mono_secondary);
-        $(".navbar-default .navbar-nav>.active>a").css("color",$color_mono_primary);
+        //$(".navbar-default .navbar-nav>.active>a").css("color",$color_mono_primary);
         $(".navbar-default").css("background-color","rgba(255,255,255,255)");
     } else {
         // Not Collapsed

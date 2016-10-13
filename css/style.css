@@ -243,17 +243,20 @@ section {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   /* Selected Navbar element */
-  color: #fff;
-  background-color: #5bc0de; }
+  background: #fff;
+  border-bottom: thick solid #5bc0de; }
 
 .navbar-default .navbar-form {
-  border-color: #5bc0de; }
+  background: #fff;
+  border-bottom: thick solid #5bc0de; }
 
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #5bc0de; }
+  background: #fff;
+  border-bottom: thick solid #5bc0de; }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  background-color: #5bc0de; }
+  background: #fff;
+  border-bottom: thick solid #5bc0de; }
 
 /* End Override */
 /* Text */

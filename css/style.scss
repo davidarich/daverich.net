@@ -296,20 +296,33 @@ section {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
   /* Selected Navbar element */
-  color: $color-mono-primary;
-  background-color: $color-secondary;
+  //color: $color-mono-primary;
+  //background-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+
+  border-bottom: thick solid $color-secondary;
 }
 
 .navbar-default .navbar-form {
-  border-color: $color-secondary;
+  //border-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+  border-bottom: thick solid $color-secondary;
 }
 
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: $color-secondary;
+  //background-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+  border-bottom: thick solid $color-secondary;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  background-color: $color-secondary;
+  //background-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+  border-bottom: thick solid $color-secondary;
 }
 
 /* End Override */
