@@ -41,26 +41,10 @@ $( document ).ready(function() {
     bgimage.src="images/pgh_bg_dark_optimized.jpg";
 
     $(bgimage).load(function(){
-        $("#intro").fadeIn("slow", "swing");
         $("#intro").css("background-image","url("+$(this).attr("src")+")");
 
     });
 
-    // Fancy Background Zoom on load
-    // Custom bezier for easing: http://cubic-bezier.com
-    var $intro = $("#intro");
-
-    if ($(window).width() > 800) {
-        $intro.css("background-size","100%");
-        $intro.velocity({"background-size" : "140%"}, 19000, [ 0.0, 0.0, 1.0, 1.0 ]);
-    }
-
-});
-
-$(window).resize(function() {
-    if ($(window).width() <= 800){
-        $("#intro").css("background-size", "cover");
-    }
 });
 
 
