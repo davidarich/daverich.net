@@ -165,37 +165,37 @@ section {
   background: $color-mono-primary;
   border-bottom: solid thin $color-secondary;
   height: 200px;
+  margin: 10px 0px 10px 0px;
 }
 
 .project-bg {
-  margin: 0;
   height: 200px;
 }
 
 
 .project-bg-datatransfer {
   background: url(../images/swifticons/Datatransfer.svg) no-repeat center center;
-  background-size: 40%;
+  background-size: 16vh;
 }
 
 .project-bg-datawork {
   background: url(../images/swifticons/Datawork.svg) no-repeat center center;
-  background-size: 40%;
+  background-size: 16vh;
 }
 
 .project-bg-manbag {
   background: url(../images/swifticons/Manbag.svg) no-repeat center center;
-  background-size: 40%;
+  background-size: 16vh;
 }
 
 .project-bg-paths {
   background: url(../images/swifticons/Paths.svg) no-repeat center center;
-  background-size: 40%;
+  background-size: 16vh;
 }
 
 .project-bg-webdesign {
   background: url(../images/swifticons/Webdesign.svg) no-repeat center center;
-  background-size: 40%;
+  background-size: 16vh;
 }
 
 .project-block-bottom {
@@ -203,6 +203,7 @@ section {
   //padding: 10px 4px 10px 4px;
   background-color: $color-mono-primary;
   color: $color-primary;
+  height: 80px;
 }
 
 .center-block {
