@@ -68,18 +68,13 @@ section {
   margin: auto;
 }
 
-.aboutme-section {
-  background: $color-mono-primary;
-  color: $color-mono-secondary;
-}
-
 .experience-section {
   background: $color-mono-primary;
 }
 
 .projects-section {
-  background: $color-primary;
-  color: $color-mono-primary;
+  background: $color-mono-tertiary;
+  color: $color-mono-secondary;
 }
 
 .certifications-section {
@@ -92,26 +87,7 @@ section {
   background: $color-primary;
   color: $color-mono-primary;
   min-height: 80%;
-
-  a {
-    color: $color-mono-primary;
-    img {
-      margin: 20px 12px 12px 12px;
-    }
-
-    &:hover {
-      @include transition(color,0.5s,ease);
-      color: $color-secondary;
-      text-decoration: none;
-
-      img {
-        @include transition(background-color,0.5s,ease);
-        background-color: $color-secondary;
-      }
-    }
-  }
 }
-
 
 .centered {
   text-align: center;
@@ -136,8 +112,6 @@ section {
 }
 
 .exp-block-title {
-  //align-items: center;
-  //justify-content: center;
   height: 50px;
   width: 100%;
   font-size: 22px;
@@ -182,13 +156,6 @@ section {
   font-size: 16px;
 }
 
-.aboutme-block {
-  display: block;
-  text-algin: center;
-  margin: 0;
-  background: $color-secondary;
-}
-
 .project-block {
   display: block;
   text-align: center;
@@ -196,11 +163,8 @@ section {
 
 .project-block-pic {
   background: $color-mono-primary;
-  border-bottom: solid thick $color-secondary;
+  border-bottom: solid thin $color-secondary;
   height: 200px;
-}
-.project-block-pic:hover {
-  background: $color-secondary;
 }
 
 .project-bg {
@@ -235,10 +199,10 @@ section {
 }
 
 .project-block-bottom {
-  margin-bottom: 30px;
-  padding: 10px 4px 10px 4px;
-  background: $color-mono-tertiary;
-  color: $color-mono-secondary;
+  margin: 18px;
+  //padding: 10px 4px 10px 4px;
+  background-color: $color-mono-primary;
+  color: $color-primary;
 }
 
 .center-block {
@@ -271,6 +235,23 @@ section {
 .navbar-is-collapsed {
   color: #fff;
 }
+
+.material-card-shadow {
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 200px;
+  padding: 0;
+  margin: 16px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
 
 /* Override Bootstrap Styles */
 .navbar-default {

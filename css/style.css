@@ -55,16 +55,12 @@ section {
   height: 50%;
   margin: auto; }
 
-.aboutme-section {
-  background: #fff;
-  color: #333; }
-
 .experience-section {
   background: #fff; }
 
 .projects-section {
-  background: #191e2b;
-  color: #fff; }
+  background: #ccc;
+  color: #333; }
 
 .certifications-section {
   min-height: 40%;
@@ -74,22 +70,7 @@ section {
   text-align: center;
   background: #191e2b;
   color: #fff;
-  min-height: 0%; }
-  .contact-section a {
-    color: #fff; }
-    .contact-section a img {
-      margin: 20px 12px 12px 12px; }
-    .contact-section a:hover {
-      -webkit-transition: color 0.5s ease;
-      -moz-transition: color 0.5s ease;
-      transition: color 0.5s ease;
-      color: #5bc0de;
-      text-decoration: none; }
-      .contact-section a:hover img {
-        -webkit-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        transition: background-color 0.5s ease;
-        background-color: #5bc0de; }
+  min-height: 80%; }
 
 .centered {
   text-align: center; }
@@ -146,23 +127,14 @@ section {
   margin-top: 40px;
   font-size: 16px; }
 
-.aboutme-block {
-  display: block;
-  text-algin: center;
-  margin: 0;
-  background: #5bc0de; }
-
 .project-block {
   display: block;
   text-align: center; }
 
 .project-block-pic {
   background: #fff;
-  border-bottom: solid thick #5bc0de;
+  border-bottom: solid thin #5bc0de;
   height: 200px; }
-
-.project-block-pic:hover {
-  background: #5bc0de; }
 
 .project-bg {
   margin: 0;
@@ -189,10 +161,9 @@ section {
   background-size: 40%; }
 
 .project-block-bottom {
-  margin-bottom: 30px;
-  padding: 10px 4px 10px 4px;
-  background: #ccc;
-  color: #333; }
+  margin: 18px;
+  background-color: #fff;
+  color: #191e2b; }
 
 .center-block {
   margin: 0 auto; }
@@ -222,6 +193,21 @@ section {
 /* Navbar */
 .navbar-is-collapsed {
   color: #fff; }
+
+.material-card-shadow {
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 200px;
+  padding: 0;
+  margin: 16px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 /* Override Bootstrap Styles */
 .navbar-default {
