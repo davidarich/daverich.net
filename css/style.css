@@ -129,42 +129,41 @@ section {
 
 .project-block {
   display: block;
-  text-align: center; }
+  text-align: center;
+  height: 270px; }
 
 .project-block-pic {
   background: #fff;
-  border-bottom: solid thin #5bc0de;
-  height: 200px;
-  margin: 10px 0px 10px 0px; }
+  border-bottom: solid thin #5bc0de; }
 
 .project-bg {
-  height: 200px; }
+  height: 170px; }
 
 .project-bg-datatransfer {
   background: url(../images/swifticons/Datatransfer.svg) no-repeat center center;
-  background-size: 16vh; }
+  background-size: 180px; }
 
 .project-bg-datawork {
   background: url(../images/swifticons/Datawork.svg) no-repeat center center;
-  background-size: 16vh; }
+  background-size: 154px; }
 
 .project-bg-manbag {
   background: url(../images/swifticons/Manbag.svg) no-repeat center center;
-  background-size: 16vh; }
+  background-size: 170px; }
 
 .project-bg-paths {
   background: url(../images/swifticons/Paths.svg) no-repeat center center;
-  background-size: 16vh; }
+  background-size: 160px; }
 
 .project-bg-webdesign {
   background: url(../images/swifticons/Webdesign.svg) no-repeat center center;
-  background-size: 16vh; }
+  background-size: 170px; }
 
 .project-block-bottom {
-  margin: 18px;
+  margin: 12px 0px 12px 0px;
   background-color: #fff;
   color: #191e2b;
-  height: 80px; }
+  height: 60px; }
 
 .center-block {
   margin: 0 auto; }
@@ -199,7 +198,6 @@ section {
   flex-direction: column;
   font-size: 16px;
   font-weight: 400;
-  min-height: 200px;
   padding: 0;
   margin: 16px;
   overflow: hidden;
