@@ -1,14 +1,11 @@
-/*!
- * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- *
- * Customized by Dave Rich.
- */
-
-/* Import to all CSS */
+/* Globals */
 @import 'theme';
 @import 'vendormixins';
+
+/* Components */
+@import 'navbar';
+@import 'project-cards';
+@import 'experience-cards';
 
 body {
   width: 100%;
@@ -18,26 +15,6 @@ body {
 html {
   width: 100%;
   height: 100%;
-}
-
-@media(min-width:767px) {
-  .navbar {
-    padding: 20px 0;
-    @include transition(background,0.5s,ease-in-out);
-    @include transition(padding,0.5s,ease-in-out);
-  }
-
-  .top-nav-collapse {
-    padding: 0;
-    background-color: rgba(255,255,255,255);
-  }
-}
-
-// Makes navbar right aligned unless collapsed to hamburger menu
-@media(min-width: 767px){
-  .navbar-ex1-collapse {
-    float: right;
-  }
 }
 
 section {
@@ -99,109 +76,9 @@ section {
   vertical-align: text-top;
 }
 
-.exp-block {
-  text-align: left;
-  min-height: 120px;
-  min-width: 293px;
-  margin: 20px;
-  padding: 0;
-  overflow: auto;
-  display: block;
-
-  color: $color-mono-primary;
-}
-
-.exp-block-title {
-  height: 50px;
-  width: 100%;
-  font-size: 22px;
-  margin: 0;
-  padding-top: 6px;
-  padding-left: 10px;
-  overflow: auto;
-  display: block;
-
-  background-color: $color-primary;
-  color: $color-mono-primary;
-  font-family: $font-primary-sans;
-  border-bottom: solid thick $color-secondary;
-
-}
-
-.exp-block-content {
-  min-height: 80px;
-  padding: 20px;
-  overflow: auto;
-  display: block;
-
-  background-color: $color-mono-tertiary;
-  color: $color-mono-secondary;
-}
-
-.exp-block-content-left {
-  float: left;
-  display: block;
-}
-.exp-block-content-right {
-  float: right;
-  display: block;
-}
-
-.exp-block-extended {
-  display: none;
-}
-
 .exp-resume {
   margin-top: 40px;
   font-size: 16px;
-}
-
-.project-block {
-  display: block;
-  text-align: center;
-  height: 270px;
-}
-
-.project-block-pic {
-  background: $color-mono-primary;
-  border-bottom: solid thin $color-secondary;
-}
-
-.project-bg {
-  height: 170px;
-}
-
-
-.project-bg-datatransfer {
-  background: url(../images/swifticons/Datatransfer.svg) no-repeat center center;
-  background-size: 180px;
-}
-
-.project-bg-datawork {
-  background: url(../images/swifticons/Datawork.svg) no-repeat center center;
-  background-size: 154px;
-}
-
-.project-bg-manbag {
-  background: url(../images/swifticons/Manbag.svg) no-repeat center center;
-  background-size: 170px;
-}
-
-.project-bg-paths {
-  background: url(../images/swifticons/Paths.svg) no-repeat center center;
-  background-size: 160px;
-}
-
-.project-bg-webdesign {
-  background: url(../images/swifticons/Webdesign.svg) no-repeat center center;
-  background-size: 170px;
-}
-
-.project-block-bottom {
-  margin: 12px 0px 12px 0px;
-  background-color: $color-mono-primary;
-  color: $color-primary;
-  height: 60px;
 }
 
 .center-block {
@@ -229,12 +106,6 @@ section {
   border: solid thick $color-secondary;
 }
 
-/* Navbar */
-
-.navbar-is-collapsed {
-  color: #fff;
-}
-
 .material-card-shadow {
   flex-direction: column;
   font-size: 16px;
@@ -250,63 +121,6 @@ section {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 
-
-/* Override Bootstrap Styles */
-.navbar-default {
-  background-color: rgba(255,255,255,0);
-  color: $color-mono-primary;
-  border: none;
-  font-family: $font-primary-sans;
-}
-
-.navbar-default .navbar-brand{
-  display: none;
-  color: $color-mono-tertiary;
-}
-
-.navbar-default .navbar-text{
-  color: $color-mono-tertiary;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: $color-mono-tertiary;
-}
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-  /* Selected Navbar element */
-  //color: $color-mono-primary;
-  //background-color: $color-secondary;
-  background: $color-mono-primary;
-  //border-style: solid;
-
-  border-bottom: thick solid $color-secondary;
-}
-
-.navbar-default .navbar-form {
-  //border-color: $color-secondary;
-  background: $color-mono-primary;
-  //border-style: solid;
-  border-bottom: thick solid $color-secondary;
-}
-
-.navbar-default .navbar-nav > .open > a:focus {
-  //background-color: $color-secondary;
-  background: $color-mono-primary;
-  //border-style: solid;
-  border-bottom: thick solid $color-secondary;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  //background-color: $color-secondary;
-  background: $color-mono-primary;
-  //border-style: solid;
-  border-bottom: thick solid $color-secondary;
-}
-
-/* End Override */
-
 /* Text */
 
 #intro-p {
@@ -321,13 +135,8 @@ h1 {
   margin-bottom: 16px;
 }
 
-
-/* Media Queries */
-
 @media (max-width: 767px) {
-  h1 {
-    font-size: 48px;
-  }
+
   #intro-name {
     font-size: 140px;
     font-family: $font-primary-sans;
@@ -335,9 +144,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  h1 {
-    font-size: 48px;
-  }
+
   #intro-name {
     font-size: 140px;
     font-family: $font-primary-sans;

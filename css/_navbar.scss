@@ -1,0 +1,77 @@
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    @include transition(background,0.5s,ease-in-out);
+    @include transition(padding,0.5s,ease-in-out);
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: rgba(255,255,255,255);
+  }
+}
+
+// Makes navbar right aligned unless collapsed to hamburger menu
+@media(min-width: 767px){
+  .navbar-ex1-collapse {
+    float: right;
+  }
+}
+
+.navbar-is-collapsed {
+  color: #fff;
+}
+
+/* Override Bootstrap Styles */
+.navbar-default {
+  background-color: rgba(255,255,255,0);
+  color: $color-mono-primary;
+  border: none;
+  font-family: $font-primary-sans;
+}
+
+.navbar-default .navbar-brand{
+  display: none;
+  color: $color-mono-tertiary;
+}
+
+.navbar-default .navbar-text{
+  color: $color-mono-tertiary;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $color-mono-tertiary;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  /* Selected Navbar element */
+  //color: $color-mono-primary;
+  //background-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+
+  border-bottom: thick solid $color-secondary;
+}
+
+.navbar-default .navbar-form {
+  //border-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+  border-bottom: thick solid $color-secondary;
+}
+
+.navbar-default .navbar-nav > .open > a:focus {
+  //background-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+  border-bottom: thick solid $color-secondary;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  //background-color: $color-secondary;
+  background: $color-mono-primary;
+  //border-style: solid;
+  border-bottom: thick solid $color-secondary;
+}

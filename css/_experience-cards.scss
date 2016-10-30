@@ -1,0 +1,51 @@
+.exp-block {
+  text-align: left;
+  min-height: 120px;
+  min-width: 293px;
+  margin: 20px;
+  padding: 0;
+  overflow: auto;
+  display: block;
+
+  color: $color-mono-primary;
+}
+
+.exp-block-title {
+  height: 50px;
+  width: 100%;
+  font-size: 22px;
+  margin: 0;
+  padding-top: 6px;
+  padding-left: 10px;
+  overflow: auto;
+  display: block;
+
+  background-color: $color-primary;
+  color: $color-mono-primary;
+  font-family: $font-primary-sans;
+  border-bottom: solid thick $color-secondary;
+
+}
+
+.exp-block-content {
+  min-height: 80px;
+  padding: 20px;
+  overflow: auto;
+  display: block;
+
+  background-color: $color-mono-tertiary;
+  color: $color-mono-secondary;
+}
+
+.exp-block-content-left {
+  float: left;
+  display: block;
+}
+.exp-block-content-right {
+  float: right;
+  display: block;
+}
+
+.exp-block-extended {
+  display: none;
+}
