@@ -255,12 +255,6 @@ section {
   font-family: "Arbutus Slab", serif;
   font-size: 20px; }
 
-h1 {
-  text-align: center;
-  font-weight: bold;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  margin-bottom: 16px; }
-
 @media (max-width: 767px) {
   #intro-name {
     font-size: 140px;
@@ -269,5 +263,33 @@ h1 {
   #intro-name {
     font-size: 140px;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif; } }
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 16px; }
+
+/* Icons */
+.large-icon {
+  font-size: 120px;
+  color: #ffffff;
+  height: 140px; }
+
+@media (max-width: 767px) {
+  .contact-icon {
+    width: 80%; }
+
+  .contact-icon-wrapper {
+    margin-bottom: 20px; } }
+@media (min-width: 768px) {
+  .contact-icon {
+    width: 140px; } }
+.contact-icon {
+  background-color: #5bc0de;
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); }
+
+.contact-icon:hover {
+  position: relative;
+  top: -5px; }
 
 /*# sourceMappingURL=style.css.map */
