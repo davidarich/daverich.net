@@ -5,6 +5,7 @@
  *
  * Customized by Dave Rich.
  */
+/* Import to all CSS */
 /* Colors */
 /* Fonts */
 body {
@@ -215,6 +216,7 @@ section {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif; }
 
 .navbar-default .navbar-brand {
+  display: none;
   color: #ccc; }
 
 .navbar-default .navbar-text {

@@ -6,6 +6,7 @@
  * Customized by Dave Rich.
  */
 
+/* Import to all CSS */
 @import 'theme';
 @import 'vendormixins';
 
@@ -259,6 +260,7 @@ section {
 }
 
 .navbar-default .navbar-brand{
+  display: none;
   color: $color-mono-tertiary;
 }
 

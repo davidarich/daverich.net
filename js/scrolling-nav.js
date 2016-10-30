@@ -8,19 +8,24 @@ $color_mono_tertiary = "#ccc";
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         // Collapsed
+        $(".navbar-brand").clearQueue(); // Prevent queued fade in animation from occurring at the wrong time
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".navbar-brand").css("color",$color_mono_secondary);
+        //$(".navbar-brand").css("display","none");
         $(".navbar-text").css("color",$color_mono_secondary);
         $(".navbar-default .navbar-nav > li > a").css("color",$color_mono_secondary);
-        //$(".navbar-default .navbar-nav>.active>a").css("color",$color_mono_primary);
         $(".navbar-default").css("background-color","rgba(255,255,255,255)");
+        $(".navbar-brand").fadeIn(1200);
     } else {
         // Not Collapsed
+        $(".navbar-brand").clearQueue(); // Prevent queued fade in animation from occurring at the wrong time
+
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $(".navbar-brand").css("color",$color_mono_tertiary);
+        $(".navbar-brand").css("display","none");
         $(".navbar-text").css("color",$color_mono_tertiary);
         $(".navbar-default .navbar-nav > li > a").css("color",$color_mono_tertiary);
         $(".navbar-default").css("background-color","rgba(255,255,255,0)");
+
     }
 });
 
@@ -42,7 +47,6 @@ $( document ).ready(function() {
 
     $(bgimage).load(function(){
         $("#intro").css("background-image","url("+$(this).attr("src")+")");
-
     });
 
 });

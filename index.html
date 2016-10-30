@@ -15,7 +15,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -25,6 +24,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+    <!-- Polyfills -->
+    <script src="js/dialog-polyfill/dialog-polyfill.js"></script>
+    <script src="js/dialog-polyfill/suite.js"></script>
+    <link rel="stylesheet" href="js/dialog-polyfill/dialog-polyfill.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -97,6 +101,67 @@
     </div>
 </section>
 
+<!-- Project Section Dialogs/Modals -->
+<dialog class="mdl-dialog project-dialog" id="dialog-project1">
+    <h4 class="mdl-dialog__title">Monitoring Frontend</h4>
+    <div class="mdl-dialog__content">
+        <p>
+            Dialog text.
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close" id="btnclose-dialog-project1">Close</button>
+    </div>
+</dialog>
+
+<dialog class="mdl-dialog project-dialog"  id="dialog-project2">
+    <h4 class="mdl-dialog__title">Daverich.net Portfolio</h4>
+    <div class="mdl-dialog__content">
+        <p>
+            Dialog text.
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close" id="btnclose-dialog-project2">Close</button>
+    </div>
+</dialog>
+
+<dialog class="mdl-dialog project-dialog"  id="dialog-project3">
+    <h4 class="mdl-dialog__title">Support Management Console API</h4>
+    <div class="mdl-dialog__content">
+        <p>
+            Dialog text.
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close" id="btnclose-dialog-project3">Close</button>
+    </div>
+</dialog>
+
+<dialog class="mdl-dialog project-dialog"  id="dialog-project4">
+    <h4 class="mdl-dialog__title">Commvault Workflows</h4>
+    <div class="mdl-dialog__content">
+        <p>
+            Dialog text.
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close" id="btnclose-dialog-project4">Close</button>
+    </div>
+</dialog>
+
+<dialog class="mdl-dialog project-dialog"  id="dialog-project5">
+    <h4 class="mdl-dialog__title">Evermore Object Storage Node.js Client</h4>
+    <div class="mdl-dialog__content">
+        <p>
+            Dialog text.
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button close" id="btnclose-dialog-project5">Close</button>
+    </div>
+</dialog>
+
 <!-- Projects Section -->
 <section id="projects" class="projects-section">
     <div class="container-fluid">
@@ -111,32 +176,45 @@
 
         <div class="row centered">
 
+            <!-- Monitoring Frontend -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 project-block center-block material-card-shadow">
+
                 <div class="project-block-pic">
                     <div class="project-bg project-bg-webdesign"></div>
                 </div>
+
                 <div class="project-block-bottom">
                     <strong>Monitoring Frontend</strong><br>
-                    September 2016 – Current<br>
-                    <button class="mdl-button mdl-js-button mdl-button--primary">
+                    September 2016 – Ongoing<br>
+
+                    <button class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect"
+                            id="btn-dialog-project1">
                         View Details
                     </button>
+
                 </div>
             </div>
 
+            <!-- Daverich.net -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 project-block center-block material-card-shadow">
+
                 <div class="project-block-pic">
                     <div class="project-bg project-bg-manbag"></div>
                 </div>
+
                 <div class="project-block-bottom">
                     <strong>Daverich.net Portfolio</strong><br>
                     August 2016 – October 2016<br>
-                    <button class="mdl-button mdl-js-button mdl-button--primary">
+
+                    <button class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect"
+                            id="btn-dialog-project2">
                         View Details
                     </button>
+
                 </div>
             </div>
 
+            <!-- Support Management Console API -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 project-block center-block material-card-shadow">
                 <div class="project-block-pic">
                     <div class="project-bg project-bg-datawork"></div>
@@ -144,12 +222,16 @@
                 <div class="project-block-bottom">
                     <strong>Support Management Console API</strong><br>
                     June 2016 – August 2016<br>
-                    <button class="mdl-button mdl-js-button mdl-button--primary">
+
+                    <button class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect"
+                            id="btn-dialog-project3">
                         View Details
                     </button>
+
                 </div>
             </div>
 
+            <!-- Commvault Workflows -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 project-block center-block material-card-shadow">
                 <div class="project-block-pic">
                     <div class="project-bg project-bg-paths"></div>
@@ -157,12 +239,16 @@
                 <div class="project-block-bottom">
                     <strong>Commvault Workflows</strong><br>
                     April 2016 – September 2016<br>
-                    <button class="mdl-button mdl-js-button mdl-button--primary">
+
+                    <button class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect"
+                            id="btn-dialog-project4">
                         View Details
                     </button>
+
                 </div>
             </div>
 
+            <!-- Evermore Client -->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8 project-block center-block material-card-shadow">
                 <div class="project-block-pic">
                     <div class="project-bg project-bg-datatransfer"></div>
@@ -170,9 +256,12 @@
                 <div class="project-block-bottom">
                     <strong>Evermore Object Storage Node.js Client</strong><br>
                     April 2016 – May 2016<br>
-                    <button class="mdl-button mdl-js-button mdl-button--primary">
+
+                    <button class="mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect"
+                            id="btn-dialog-project5">
                         View Details
                     </button>
+
                 </div>
             </div>
 
@@ -180,7 +269,6 @@
 
     </div>
 </section>
-
 
 <!-- Experience Section -->
 <section id="experience" class="experience-section">
@@ -215,7 +303,7 @@
                     <div id="exp_expedient" class="exp-block-extended">
                         <ul>
                             <li>Solved issues for managed backup environment which protects 5 Petabytes of Windows and
-                                Linux file system, Microsoft Exchange, MicrosoftSQL Server, MySQL, and Oracle Database
+                                Linux file system, Microsoft Exchange, Microsoft SQL Server, MySQL, and Oracle Database
                                 data for over 6,000 clients
                             </li>
                             <li>Assisted with management of NetWorker and Commvault backup infrastructure which spans 11
@@ -397,6 +485,7 @@
 
 <!-- Control JavaScript -->
 <script src="js/controls.js"></script>
+
 
 </body>
 
