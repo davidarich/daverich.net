@@ -40,7 +40,6 @@ html {
 }
 
 section {
-  //min-height: 100%;
   padding-top: 70px;
   overflow: auto;
   padding-bottom: 10em;
@@ -65,7 +64,7 @@ section {
 
 #intro-name {
   height: 50%;
-  margin: auto;
+  line-height: 120px;
 }
 
 .experience-section {
@@ -78,7 +77,7 @@ section {
 }
 
 .certifications-section {
-  min-height: 40%;
+  //min-height: 40%;
   background: $color-mono-tertiary;
 }
 
