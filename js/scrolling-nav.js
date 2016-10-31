@@ -42,6 +42,8 @@ $(function() {
 // Optimizes page load speed by loading the background image last
 $( document ).ready(function() {
     var bgimage = new Image();
+
+    //TODO: load smaller image for mobile users
     bgimage.src="images/pgh_bg_dark_optimized.jpg";
 
     $(bgimage).load(function(){

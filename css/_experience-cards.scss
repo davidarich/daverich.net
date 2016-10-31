@@ -29,11 +29,10 @@
 }
 
 .exp-block-content {
-  min-height: 144px;
+  min-height: 134px;
   padding: 0;
   overflow: auto;
   display: block;
-
   background-color: $color-mono-primary;
   color: $color-mono-secondary;
 }
@@ -48,7 +47,7 @@
 .exp-block-content-single {
   margin: 14px 14px 14px 14px;
   padding: 0;
-  margin-bottom: 82px;
+  margin-bottom: 72px;
 }
 
 .exp-block-content-bottom {
@@ -59,9 +58,10 @@
 
 .exp-block-extended {
   display: none;
-  margin-top: 30px;
+  margin-top: 20px;
   height: 300px;
   overflow: auto;
+  padding: 10px;
   border-top: solid thin $color-secondary;
   width: 100%;
 }
