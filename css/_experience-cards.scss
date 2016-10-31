@@ -29,7 +29,7 @@
 }
 
 .exp-block-content {
-  min-height: 160px;
+  min-height: 144px;
   padding: 20px;
   overflow: auto;
   display: block;
@@ -39,14 +39,23 @@
 }
 
 .exp-block-content-left {
+   float: left;
+   display: block;
+   margin-bottom: 12px;
+ }
+
+.exp-block-content-bottom {
   float: left;
-  display: block;
-}
-.exp-block-content-right {
-  float: right;
   display: block;
 }
 
 .exp-block-extended {
   display: none;
+  margin-top: 110px;
+  height: 300px;
+  overflow: auto;
+}
+
+.exp-morebutton-container{
+  margin-top: 20px;
 }
