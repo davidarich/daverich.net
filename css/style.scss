@@ -135,9 +135,13 @@ section {
 @media (max-width: 767px) {
 
   #intro-name {
-    font-size: 140px;
+    font-size: 20vw;
     font-family: $font-primary-sans;
   }
+  h1 {
+    font-size: 50vw;
+  }
+
 }
 
 @media (min-width: 768px) {

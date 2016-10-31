@@ -30,30 +30,40 @@
 
 .exp-block-content {
   min-height: 144px;
-  padding: 20px;
+  padding: 0;
   overflow: auto;
   display: block;
 
-  background-color: $color-mono-tertiary;
+  background-color: $color-mono-primary;
   color: $color-mono-secondary;
 }
 
 .exp-block-content-left {
-   float: left;
-   display: block;
-   margin-bottom: 12px;
+  display: block;
+  margin: 14px 14px 14px 14px;
+  padding: 0;
+  margin-bottom: 12px;
  }
 
+.exp-block-content-single {
+  margin: 14px 14px 14px 14px;
+  padding: 0;
+  margin-bottom: 82px;
+}
+
 .exp-block-content-bottom {
-  float: left;
   display: block;
+  margin: 14px 14px 14px 14px;
+  padding: 0;
 }
 
 .exp-block-extended {
   display: none;
-  margin-top: 110px;
+  margin-top: 30px;
   height: 300px;
   overflow: auto;
+  border-top: solid thin $color-secondary;
+  width: 100%;
 }
 
 .exp-morebutton-container{

@@ -1,5 +1,5 @@
 var $color_primary = "#191e2b";
-$color_secondary = "#5bc0de";
+$color_secondary = "#40C4FF";
 $color_mono_primary = "#fff";
 $color_mono_secondary = "#333";
 $color_mono_tertiary = "#ccc";
@@ -11,7 +11,6 @@ $(window).scroll(function() {
         $(".navbar-brand").clearQueue(); // Prevent queued fade in animation from occurring at the wrong time
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".navbar-brand").css("color",$color_mono_secondary);
-        //$(".navbar-brand").css("display","none");
         $(".navbar-text").css("color",$color_mono_secondary);
         $(".navbar-default .navbar-nav > li > a").css("color",$color_mono_secondary);
         $(".navbar-default").css("background-color","rgba(255,255,255,255)");
