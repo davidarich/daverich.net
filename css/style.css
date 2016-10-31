@@ -60,7 +60,8 @@
 .project-block {
   display: block;
   text-align: center;
-  height: 270px; }
+  height: 270px;
+  background: #fff; }
 
 .project-block-pic {
   background: #fff;
@@ -119,9 +120,10 @@
   color: #fff; }
 
 .exp-block-title {
-  height: 50px;
   width: 100%;
+  height: 40px;
   font-size: 22px;
+  line-height: 22px;
   margin: 0;
   padding-top: 6px;
   padding-left: 10px;
@@ -130,10 +132,10 @@
   background-color: #191e2b;
   color: #fff;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  border-bottom: solid thick #5bc0de; }
+  border-bottom: solid thin #5bc0de; }
 
 .exp-block-content {
-  min-height: 80px;
+  min-height: 160px;
   padding: 20px;
   overflow: auto;
   display: block;
@@ -191,6 +193,7 @@ section {
   color: #333; }
 
 .certifications-section {
+  min-height: 40%;
   background: #ccc; }
 
 .contact-section {
@@ -210,6 +213,10 @@ section {
 .exp-resume {
   margin-top: 40px;
   font-size: 16px; }
+
+.footer-section {
+  background: #222;
+  height: 10%; }
 
 .center-block {
   margin: 0 auto; }
@@ -245,7 +252,6 @@ section {
   overflow: hidden;
   z-index: 1;
   position: relative;
-  background: #fff;
   border-radius: 2px;
   box-sizing: border-box;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
@@ -273,7 +279,7 @@ h1 {
 .large-icon {
   font-size: 120px;
   color: #ffffff;
-  height: 140px; }
+  height: 160px; }
 
 @media (max-width: 767px) {
   .contact-icon {
@@ -283,10 +289,11 @@ h1 {
     margin-bottom: 20px; } }
 @media (min-width: 768px) {
   .contact-icon {
-    width: 140px; } }
+    width: 134px; } }
 .contact-icon {
   background-color: #5bc0de;
-  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+  margin: auto; }
 
 .contact-icon:hover {
   position: relative;
