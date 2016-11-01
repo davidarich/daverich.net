@@ -7,23 +7,27 @@ var cleancss = require('gulp-clean-css'); // Minify/Cleanup CSS files
 var pump = require('pump'); // Passes errors correctly through uglify
 var changed = require('gulp-changed'); // Only passes through changed files
 
-// File path definition
+// File path definitions
 var paths = {
-    src : {
-        html : ['src/*.html'],
+    src: {
+        html: ['src/*.html'],
         scripts: ['src/js/**.js'],
         styles: ['src/css/**.css'],
-        images: ['src/images/**/**.*']
+        images: ['src/images/**/**.*'],
+        favicon: ['src/favicon.ico'],
+        docs: ['src/docs/**.*']
     },
-    dist : {
-        html : 'dist',
-        scripts : 'dist/js',
-        styles : 'dist/css',
-        images : 'dist/images'
+    dist: {
+        html: 'dist',
+        scripts: 'dist/js',
+        styles: 'dist/css',
+        images: 'dist/images',
+        favicon: 'dist',
+        docs: 'dist/docs'
     }
 };
 
-var buildtasks = ['javascript','html','css','images'];
+var buildtasks = ['javascript','html','css','images','favicon','docs'];
 
 // Default task code
 gulp.task('default', function() {
@@ -45,7 +49,7 @@ gulp.task('javascript', function(cb) {
     );
 });
 
-// Prepare CSS files for disribution
+// Prepare CSS files for distribution
 gulp.task('css', function(){
     gulp.src(paths.src.styles)
         .pipe(changed(paths.dist.styles))
@@ -68,4 +72,18 @@ gulp.task('images', function(){
        .pipe(changed(paths.dist.images))
        // Do nothing, just move the files for now
        .pipe(gulp.dest(paths.dist.images))
+});
+
+// Copy favicon file to dist
+gulp.task('favicon', function(){
+    gulp.src(paths.src.favicon)
+        .pipe(changed(paths.dist.favicon))
+        .pipe(gulp.dest(paths.dist.favicon))
+});
+
+// Copy document files to dist/docs
+gulp.task('docs', function(){
+    gulp.src(paths.src.docs)
+        .pipe(changed(paths.dist.docs))
+        .pipe(gulp.dest(paths.dist.docs))
 });
