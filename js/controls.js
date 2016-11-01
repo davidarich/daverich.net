@@ -34,7 +34,7 @@ var projectDialog = $('.project-dialog').each(function(){
     // Add handler to the button for showing the dialog
     projectDialogButton.on('click', function() {
         // Select the dialog since scope is limited to this anonymous function
-        var dialogId = this.id.substring(this.id.indexOf('-') + 1);
+        var dialogId = this.id.substring(this.id.toString().indexOf('-') + 1);
         // Show dialog
         document.querySelector('#' + dialogId).showModal();
     });
@@ -42,7 +42,7 @@ var projectDialog = $('.project-dialog').each(function(){
     // Add handler to the close button for closing the dialog
     projectDialogCloseButton.on('click', function() {
         // Select the dialog since scope is limited to this anonymous function
-        var dialogId = this.id.substring(this.id.indexOf('-') + 1);
+        var dialogId = this.id.substring(this.id.toString().indexOf('-') + 1);
         // Close dialog
         document.querySelector('#' + dialogId).close();
     });

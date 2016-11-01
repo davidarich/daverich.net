@@ -31,6 +31,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   background: $color-primary;
   background-size: cover;
@@ -202,4 +203,8 @@ section {
 .contact-icon:hover {
   position: relative;
   top: -5px;
+}
+
+.automargin {
+  margin: auto;
 }

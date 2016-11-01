@@ -193,6 +193,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   background: #191e2b;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,5 +332,8 @@ section {
 .contact-icon:hover {
   position: relative;
   top: -5px; }
+
+.automargin {
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

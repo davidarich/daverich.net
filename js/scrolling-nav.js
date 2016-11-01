@@ -39,18 +39,52 @@ $(function() {
     });
 });
 
-// Optimizes page load speed by loading the background image last
-$( document ).ready(function() {
-    var bgimage = new Image();
+////////////////////////////////////
+// Intro Background
+////////////////////////////////////
 
-    //TODO: load smaller image for mobile users
-    bgimage.src="images/pgh_bg_dark_optimized.jpg";
+var bgimage = new Image();
+var widthChanging = true;
+
+// Optimizes page load speed by loading the background image last & loading appropriate size
+$( document ).ready(function() {
+
+    // Check the screen width to determine loaded background
+    if ($(window).width() < 600) {
+        // Mobile
+        bgimage.src="images/pgh_bg_dark_mobile_optimized.jpg";
+    }
+    else {
+        // Everything Else
+        bgimage.src="images/pgh_bg_dark_optimized.jpg";
+    }
 
     $(bgimage).load(function(){
         $("#intro").css("background-image","url("+$(this).attr("src")+")");
     });
-
+    widthChanging = false;
 });
 
+// Reload background image
+$(window).on('resize', function() {
+    if (!widthChanging) {
+        widthChanging = true;
+        oldbgimage = bgimage.src;
+        if ($(window).width() < 600) {
+            // Mobile
+            bgimage.src="images/pgh_bg_dark_mobile_optimized.jpg";
+        } else {
+            // Everything Else
+            bgimage.src="images/pgh_bg_dark_optimized.jpg";
+        }
 
+        // Load the background image if it's different
+        if (bgimage.src != oldbgimage){
+            $(bgimage).load(function(){
+                $("#intro").css("background-image","url("+$(this).attr("src")+")");
+            });
+        }
+    }
+    widthChanging = false;
+});
 
