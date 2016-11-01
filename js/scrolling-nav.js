@@ -52,11 +52,11 @@ $( document ).ready(function() {
     // Check the screen width to determine loaded background
     if ($(window).width() < 600) {
         // Mobile
-        bgimage.src="images/pgh_bg_dark_mobile_optimized.jpg";
+        bgimage.src = "images/pgh_bg_dark_mobile_optimized.jpg";
     }
     else {
         // Everything Else
-        bgimage.src="images/pgh_bg_dark_optimized.jpg";
+        bgimage.src = "images/pgh_bg_dark_optimized.jpg";
     }
 
     $(bgimage).load(function(){
@@ -68,18 +68,21 @@ $( document ).ready(function() {
 // Reload background image
 $(window).on('resize', function() {
     if (!widthChanging) {
+
         widthChanging = true;
-        oldbgimage = bgimage.src;
+        var newbg = '';
+        // Check the screen width to determine loaded background
         if ($(window).width() < 600) {
             // Mobile
-            bgimage.src="images/pgh_bg_dark_mobile_optimized.jpg";
+            newbg = "images/pgh_bg_dark_mobile_optimized.jpg";
         } else {
             // Everything Else
-            bgimage.src="images/pgh_bg_dark_optimized.jpg";
+            newbg = "images/pgh_bg_dark_optimized.jpg";
         }
 
         // Load the background image if it's different
-        if (bgimage.src != oldbgimage){
+        if (bgimage.src != newbg){
+            bgimage.src = newbg;
             $(bgimage).load(function(){
                 $("#intro").css("background-image","url("+$(this).attr("src")+")");
             });
