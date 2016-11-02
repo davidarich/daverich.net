@@ -3,6 +3,7 @@ var gulp = require('gulp');
 //var sourcemaps = require('gulp-sourcemaps'); // Creates sourcemaps (.map) for minified files
 var uglify = require('gulp-uglify'); // Minify JS files
 var htmlmin = require('gulp-htmlmin'); // Minify HTML files
+var imagemin = require('gulp-imagemin'); // Minify images GIF, JPEG, PNG, & SVG
 var cleancss = require('gulp-clean-css'); // Minify/Cleanup CSS files
 var pump = require('pump'); // Passes errors correctly through uglify
 var changed = require('gulp-changed'); // Only passes through changed files
@@ -70,7 +71,14 @@ gulp.task('html', function(){
 gulp.task('images', function(){
    gulp.src(paths.src.images)
        .pipe(changed(paths.dist.images))
-       // Do nothing, just move the files for now
+       .pipe(imagemin({
+           optimizationLevel: 3,
+           progressive: true,
+           interlaced: false,
+           svgoPlugins: [{
+               removeViewBox: false
+           }]
+       }))
        .pipe(gulp.dest(paths.dist.images))
 });
 
